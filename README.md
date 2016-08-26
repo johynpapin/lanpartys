@@ -1,4 +1,4 @@
-# lanpartys
+# LAN party’s
 Ce dépôt contient les différents sites des LAN’s organisées par la KiwiAsso.
 
 ## LAN 8.0
