@@ -8,4 +8,4 @@ Lorsque l’utilisateur clique sur la flèche ou scroll vers le bas de la page, 
 
 En revanche, le formulaire possède est encapsulé dans une div de taille fixe (celle de l’écran, 100vh), et donc si le formulaire est trop grand et dépasse de la taille de l’écran, alors il devient possible de scroller sur cette page uniquement. Si l’utilisateur scroll vers le haut en étant en haut du formulaire, alors il reviendra à la page d’introduction.
 
-Pour en savoir plus, rendez-vous ici : .
+Pour en savoir plus, rendez-vous ici : (LAN 8.0)[https://github.com/johynpapin/lanpartys/tree/master/lan8].
