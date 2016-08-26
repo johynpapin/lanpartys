@@ -11,6 +11,6 @@ Lorsque l’utilisateur clique sur la flèche ou scroll vers le bas de la page, 
 
 En revanche, le formulaire possède est encapsulé dans une div de taille fixe (celle de l’écran, 100vh), et donc si le formulaire est trop grand et dépasse de la taille de l’écran, alors il devient possible de scroller sur cette page uniquement. Si l’utilisateur scroll vers le haut en étant en haut du formulaire, alors il reviendra à la page d’introduction.
 
-Ce site utilise [Node.js](https://nodejs.org/), [Express](http://expressjs.com/), et les [API’s google](https://developers.google.com/sheets/). En effet, les inscriptions sont automatiquements enregistrées dans un tableur hebergé par google drive. De plus, j’utilise [Material Design Lite](https://getmdl.io/) pour le design du formulaire.
+Ce site utilise [Node.js](https://nodejs.org/), [Express](http://expressjs.com/), et les [API’s google](https://developers.google.com/sheets/). En effet, les inscriptions sont automatiquement enregistrées dans un tableur hebergé par google drive. De plus, j’utilise [Material Design Lite](https://getmdl.io/) pour le design du formulaire.
 
 Pour en savoir plus, rendez-vous ici : [LAN 8.0](https://github.com/johynpapin/lanpartys/tree/master/lan8).
