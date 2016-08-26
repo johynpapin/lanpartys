@@ -1,0 +1,24 @@
+{
+  "name": "lan80",
+  "version": "1.0.0",
+  "description": "Site web de la LAN 8.0 organisée par la KiwiAsso",
+  "author": {
+    "name": "Papin Johyn",
+    "email": "johynpapin@kiwiasso.org"
+  },
+  "homepage": "http://lan-johynpapin.rhcloud.com/",
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "google-auth-library": "^0.9.8",
+    "googleapis": "^12.4.0"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "main": "server.js"
+}

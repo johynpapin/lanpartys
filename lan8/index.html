@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>LAN 8.0</title>
+    <link rel="stylesheet" href="public/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.red-purple.min.css">
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="introduction" class="table">
+    <video muted loop autoplay poster="public/cover-bg.jpg">
+        <source src="public/video-bg.mp4" type="video/mp4">
+        <source src="public/video-bg.webm" type="video/webm">
+    </video>
+    <div class="cell">
+        <h3>Samedi 27 août...</h3>
+        <h1>LAN 8.0</h1>
+        <div class="arrow bounce"></div>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="container" class="table">
+        <div class="cell">
+            <h1>Formulaire d’inscription</h1>
+            <form id="register" action="/" method="post">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+                        <h5>Vous</h5>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="lastname" name="lastname">
+                            <label class="mdl-textfield__label" for="lastname">Nom</label>
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="firstname" name="firstname">
+                            <label class="mdl-textfield__label" for="firstname">Prénom</label>
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="nickname" name="nickname">
+                            <label class="mdl-textfield__label" for="nickname">Pseudonyme</label>
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="email" id="email" name="email">
+                            <label class="mdl-textfield__label" for="email">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+                        <h5>Tournois</h5>
+
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="lol">
+                            <input type="checkbox" id="lol" class="mdl-checkbox__input" name="lol">
+                            <span class="mdl-checkbox__label">League of Legends</span>
+                        </label>
+
+                        <label id="lol-sname" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="display: none;">
+                            <input class="mdl-textfield__input" type="text" id="sname" name="sname">
+                            <label class="mdl-textfield__label" for="sname">Nom d’invocateur</label>
+                        </label>
+
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tm">
+                            <input type="checkbox" id="tm" class="mdl-checkbox__input" name="tm">
+                            <span class="mdl-checkbox__label">TrackMania</span>
+                        </label>
+
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fifa">
+                            <input type="checkbox" id="fifa" class="mdl-checkbox__input" name="fifa">
+                            <span class="mdl-checkbox__label">FIFA</span>
+                        </label>
+
+                        <h5>Informations supplémentaires</h5>
+
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="wires">
+                            <input type="checkbox" id="wires" class="mdl-checkbox__input" name="wires">
+                            <span class="mdl-checkbox__label">J’emporterais des : câbles réseaux et/ou des multiprises.</span>
+                        </label>
+
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="station">
+                            <input type="checkbox" id="station" class="mdl-checkbox__input" name="station">
+                            <span class="mdl-checkbox__label">J’emporterais : une console compatible avec FIFA et/ou un jeu FIFA.</span>
+                        </label>
+                    </div>
+                </div>
+                <br><br>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                    Terminer l’inscription
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(window).bind('mousewheel', function (event) {
+        if (event.originalEvent.wheelDelta > 0) {
+            if ($(window).scrollTop() === $("#wrapper").offset().top && $("#wrapper").scrollTop() === 0)
+                $('html, body').animate({
+                    scrollTop: $("#introduction").offset().top
+                }, 250);
+        } else if ($(window).scrollTop() === $("#introduction").offset().top)
+            $('html, body').animate({
+                scrollTop: $("#wrapper").offset().top
+            }, 250);
+    });
+
+    $('.arrow').click(function () {
+        $('html, body').animate({
+            scrollTop: $("#wrapper").offset().top
+        }, 250);
+    });
+
+    $('#lol').change(function () {
+        $('#lol-sname').slideToggle("fast");
+    });
+</script>
+</body>
+</html>
