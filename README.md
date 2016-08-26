@@ -2,6 +2,9 @@
 Ce dépôt contient les différents sites des LAN’s organisées par la KiwiAsso.
 
 ## LAN 8.0
+
+![Capture d’écran du site de la LAN 8.0](https://s13.postimg.org/ohss53r53/lan80_mockedup.png)
+
 Le site web de la LAN 8.0 se veut très simple, il est constitué d’une page d’introduction avec la date et le nom de l’évènement. Cette page d’introduction prend toute la taille de l’écran, et possède un background vidéo.
 
 Lorsque l’utilisateur clique sur la flèche ou scroll vers le bas de la page, un formulaire d’inscription prenant au minimum toute la taille de l’écran apparaît. Vous pouvez remarquer que html et body sont en overflow: hidden, et que par conséquent l’animation entre l’introduction et le formulaire est le seul moyen de changer de page.
