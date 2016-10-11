@@ -21,6 +21,6 @@ Pour en savoir plus, rendez-vous ici : [LAN 8.0](https://github.com/johynpapin/l
 
 Le site web de la LAN 7.0 est plus complexe que celui de la LAN 8.0. Réalisé à l’aide de [Meteor](https://www.meteor.com/), il est relié à la plate-forme [toornament](https://www.toornament.com/) afin de publier en temps-réel les résultats des matchs.
 
-Il gère l’inscription des joueurs de manière plus poussée : création d’un espace personnel, puis inscription dans une équipe, ou il est possible de communiquer avec les autres membres.
+Il gère l’inscription des joueurs de manière plus poussée : création d’un espace personnel, puis inscription dans une équipe, où il est possible de communiquer avec les autres membres.
 
 La technologie Meteor rend le site très rapide, car le routage à lieu au niveau du client et les données sont actualisées en temps-réel.
